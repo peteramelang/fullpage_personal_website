@@ -1,0 +1,112 @@
+//
+// Variables
+// --------------------------------------------------
+
+// Colors
+
+$white:    rgb(255, 255, 255);
+$black:    rgb(0, 0, 0);
+$grey:	   rgb(153,153,153);
+$blue:     rgb(0, 174, 239);
+$yellow:   rgb(255, 242, 0);
+$magenta:  rgb(236, 0, 140);
+
+
+// Scaffolding
+
+$body-bg:               $white !default;
+$text-color:            $white !default;
+
+$link-color:            $white !default;
+$link-hover-color:      darken($white, 15%) !default;
+
+
+// Typography
+
+@media screen and (-webkit-min-device-pixel-ratio:0) { html {-webkit-font-smoothing: antialiased;}}
+
+@include font-face(
+	"Campton",
+	font-files(
+		"CamptonBold.woff",
+		"CamptonBold.ttf"
+	),
+	"CamptonBold.eot",
+	bold,
+	normal
+);
+
+@include font-face(
+	"Officina",
+		font-files(
+		"OfficinaSerITCStd-BookItalic.woff",
+		"OfficinaSerITCStd-BookItalic.ttf"
+	),
+	"OfficinaSerITCStd-BookItalic.eot",
+	normal,
+	normal
+);
+
+@include font-face(
+	"Avenir",
+	font-files(
+		"AvenirMedium.woff",
+		"AvenirMedium.ttf",
+		"AvenirMedium.svg"
+	),
+	"AvenirMedium.eot",
+	400,
+	normal
+);
+
+@include font-face(
+	"Avenir",
+	font-files(
+		"AvenirBlack.woff",
+		"AvenirBlack.ttf",
+		"AvenirBlack.svg"
+	),
+	"AvenirBlack.eot",
+	700,
+	normal
+);
+
+
+$font-family-sans-serif:  "Avenir", Helvetica, Arial, sans-serif !default;
+$font-family-serif:       "Officina", Georgia, "Times New Roman", Times, serif !default;
+$font-family-hero:    	  "Campton", "Helvetica", sans-serif !default;
+$font-family-base:        $font-family-sans-serif !default;
+
+$font-size-base:          13px !default;
+$font-size-large:         18px !default; // 18px
+$font-size-small:         12px !default; // 12px
+
+$font-size-h1:            36px;
+$font-size-h2:            30px;
+$font-size-h3:            24px; // 24px
+$font-size-h4:            18px; // 18px
+$font-size-h5:            $font-size-base !default;
+$font-size-h6:            $font-size-small;
+
+$line-height-base:        1.428571429 !default; // 20/14
+$line-height-computed:    floor(($font-size-base * $line-height-base)) !default; // ~20px
+
+$headings-font-family:    $font-family-hero !default;
+$headings-font-weight:    400 !default;
+$headings-line-height:    1.1 !default;
+$headings-color:          inherit !default;
+
+
+// Image sprites
+//
+// Automatic image handler supports only PNG-files!
+// ###################################################
+// Usage:
+// For Sprites: @include retina-sprite-background(Filename without extension);
+// For single images: @include retina-background(Filename without extension);
+
+$iconsSprite: sprite-map("sprites/normal/*.png", $spacing: 5px);
+$iconsSpriteRetina: sprite-map("sprites/retina/*.png", $spacing: 5px);
+
+$iconsNormal: "no-sprites/normal/";
+$iconsRetina: "no-sprites/retina/";
