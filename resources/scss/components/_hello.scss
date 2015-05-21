@@ -1,0 +1,15 @@
+#hello-container {
+	p.font-size-h1 {
+		font-weight: $font-weight-bold;
+		float: left;
+		width: auto;
+	}
+	hr { margin-top: -8px; }
+	p.name {
+		text-align: center;
+		font-size: $font-size-small;
+		float: left;
+		margin-top: 5px;
+		color: $darkgrey;
+	}
+}

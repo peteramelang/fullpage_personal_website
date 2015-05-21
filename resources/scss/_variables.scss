@@ -34,10 +34,13 @@ $font-size-small:         12px !default; // 12px
 
 $font-size-h1:            72px;
 $font-size-h2:            36px;
-$font-size-h3:            30px;
+$font-size-h3:            28px;
 $font-size-h4:            24px;
 $font-size-h5:            $font-size-base !default;
 $font-size-h6:            $font-size-small;
+
+$font-weight-light: 400;
+$font-weight-bold: 900;
 
 $line-height-base:        1.428571429 !default; // 20/14
 $line-height-computed:    floor(($font-size-base * $line-height-base)) !default; // ~20px

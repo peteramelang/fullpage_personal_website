@@ -31,32 +31,12 @@ body, html {
 .wrapper {
 	a {
 		text-decoration: none;
-		position: relative;
-		font-weight: bold;
-
-		&:after {
-			content: 'Processing';
-			color: transparent;
-			width: 100%;
-			position: absolute;
-			left: 0;
-			bottom: 0px;
-			border-bottom: 1px solid $black;
-		}
-	}
-	&.white a {
 		color: $black;
-		&:after {
-			border-bottom: 1px solid $black;
-		}
 	}
+}
 
-	&.black a {
-		color: $white;
-		&:after {
-			border-bottom: 1px solid $white;
-		}
-	}
+.content.center {
+	margin: 0 auto;
 }
 
 ul, ol {
@@ -64,7 +44,10 @@ ul, ol {
 }
 
 p {
-	margin-bottom: 1em;
+	&.font-size-h1 { font-size: $font-size-h1; }
+	&.font-size-h2 { font-size: $font-size-h2; }
+	&.font-size-h3 { font-size: $font-size-h3; }
+	&.font-size-h4 { font-size: $font-size-h4; }
 }
 
 #global-wrapper {
@@ -72,4 +55,26 @@ p {
 	overflow: hidden;
 	position: relative;
 	width: 100%;
+}
+
+.typed-cursor{
+	opacity: 1;
+	-webkit-animation: blink 0.7s infinite;
+	-moz-animation: blink 0.7s infinite;
+	animation: blink 0.7s infinite;
+}
+@keyframes blink{
+	0% { opacity:1; }
+	50% { opacity:0; }
+	100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+	0% { opacity:1; }
+	50% { opacity:0; }
+	100% { opacity:1; }
+}
+@-moz-keyframes blink{
+	0% { opacity:1; }
+	50% { opacity:0; }
+	100% { opacity:1; }
 }

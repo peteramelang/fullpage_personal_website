@@ -1,0 +1,104 @@
+#who-container {
+	.content {
+		text-transform: uppercase;
+
+		b { font-weight: $font-weight-bold; }
+
+		p {
+			font-size: $font-size-base;
+			color: $darkgrey;
+			font-weight: $font-weight-bold;
+
+			&.font-size-h3 { font-size: $font-size-h3; color: $black }
+			&.font-size-h4 { font-size: $font-size-h4; color: $black }
+		}
+
+		.intro {
+			text-align: center;
+			.name b { font-size: $font-size-h3; color: $black }
+			.about b { font-size: $font-size-h4; color: $black }
+			.location b { font-size: $font-size-h4; color: $black }
+			a {
+				border-bottom: 1px solid $black;
+				&:hover {
+					border-bottom: 2px solid $black;
+				}
+			}
+		}
+
+		.skills {
+			max-width: 560px;
+			width: 100%;
+			margin: 60px auto 0 auto;
+
+			& > div {
+				width: 100%;
+				float: left;
+				margin-bottom: 20px;
+
+				.title {
+					float: left;
+					text-align: right;
+				}
+
+				.skill-progress {
+					text-transform: none;
+
+					.skill {
+						float: left;
+						width: 240px;
+						margin-left: 40px;
+						position: relative;
+
+						.progress-bar {
+							width: 98px;
+							height: 8px;
+							float: right;
+							@include retina-background("skills-progress-points");
+							margin: 6px 0;
+
+							&.progress-1 { background-position: -90px 0; }
+							&.progress-2 { background-position: -80px 0; }
+							&.progress-3 { background-position: -70px 0; }
+							&.progress-4 { background-position: -60px 0; }
+							&.progress-5 { background-position: -50px 0; }
+							&.progress-6 { background-position: -40px 0; }
+							&.progress-7 { background-position: -30px 0; }
+							&.progress-8 { background-position: -20px 0; }
+							&.progress-9 { background-position: -10px 0; }
+							&.progress-10 { background-position: 0 0; }
+						}
+
+						.help-toggler {
+							@include retina-sprite-background('skills-help');
+							//background-image: url(../svgs/skills-help.svg), none;
+							width: 12px;
+							height: 12px;
+							cursor: pointer;
+							float: left;
+							margin: 4px;
+						}
+
+						p {
+							color: $black;
+							line-height: 19px;
+							margin-bottom: 10px;
+							float: left;
+						}
+
+						.help-content {
+							position: absolute;
+							display: none;
+							right: 0;
+							top: -1px;
+							background: $white;
+						}
+					}
+				}
+
+				b { font-size: $font-size-h4; color: $black }
+			}
+
+		}
+	}
+}

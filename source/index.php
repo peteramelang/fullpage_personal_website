@@ -39,102 +39,116 @@
 	<link rel="icon" type="image/png" sizes="64x64" href="images/favicon.png">-->
 </head>
 <body>
-	<div class="global-wrapper">
-		<div class="wrapper" id="hello">
+	<div class="global-wrapper" id="fullpage">
+		<div class="wrapper section" id="hello-container">
 			<div class="content center">
-				<h1>Hello.</h1>
+				<p class="font-size-h1">Hello.</p>
 				<hr>
-				<p>Peter Amelang</p>
+				<p class="name">Peter Amelang</p>
 			</div>
 			<div class="btn-next-wrapper"></div>
 		</div>
-		<div class="wrapper" id="who">
+		<div class="wrapper section" id="who-container">
 			<div class="navigation">
-				<a href="#">Hello.</a>
-				<a href="#">Who?</a>
+				<a href="#hello">Hello.</a>
+				<a href="#who" class="active">Who?</a>
 
 				<div class="btn-previous-wrapper"></div>
 
-				<a href="#">What?</a>
-				<a href="#">Wow!</a>
+				<a href="#what">What?</a>
+				<a href="#wow">Wow!</a>
 			</div>
 			<div class="content center">
 				<div class="intro">
-					<p>My name is </p><p class="font-size-h3">Peter Amelang</p>
-					<p>I'm </p><p class="font-size-h4" id="personal-info">a placeholder</p>
-					<p>Located in </p><p class="font-size-h4">munich</p>
+					<p class="name">My name is <b>Peter Amelang</b></p>
+					<p class="about">I'm <b id="personal-info">IN TRAINING AT FORMAT D</b></p>
+					<p class="location">Located in <b>munich</b></p>
 				</div>
 				<div class="skills">
 					<div class="front-end">
-						<p>I do </p><p class="font-size-h4">Front-End-</p>
+						<p class="title">I do <b>Front-End-</b></p>
 						<div class="skill-progress">
-							<p>jQuery</p>
-							<div class="progress-bar progress-3"></div>
+							<div class="skill">
+								<p class="skill-title">jQuery</p>
+								<div class="progress-bar progress-3"></div>
+							</div>
 
-							<p>HTML & CSS</p>
-							<a class="help-toggler"></a>
-							<div class="progress-bar progress-8"></div>
-							<p class="help-content">HTML 5, CSS3, SASS</p>
+							<div class="skill">
+								<p class="skill-title">HTML & CSS</p>
+								<a class="help-toggler"></a>
+								<p class="help-content">HTML 5, CSS3, SASS</p>
+								<div class="progress-bar progress-8"></div>
+							</div>
 						</div>
 					</div>
 					<div class="back-end">
-						<p>and </p><p class="font-size-h4">Back-End-Stuff</p>
+						<p class="title">and <b>Back-End-Stuff</b></p>
 						<div class="skill-progress">
-							<p>PHP</p>
-							<a class="help-toggler"></a>
-							<div class="progress-bar progress-2"></div>
-							<p class="help-content">HTML 5, CSS3, SASS</p>
+							<div class="skill">
+								<p class="skill-title">PHP</p>
+								<a class="help-toggler"></a>
+								<p class="help-content">HTML 5, CSS3, SASS</p>
+								<div class="progress-bar progress-2"></div>
+							</div>
 
-							<p>Magento</p>
-							<a class="help-toggler"></a>
-							<div class="progress-bar progress-1"></div>
-							<p class="help-content">HTML 5, CSS3, SASS</p>
+							<div class="skill">
+								<p class="skill-title">Magento</p>
+								<a class="help-toggler"></a>
+								<p class="help-content">HTML 5, CSS3, SASS</p>
+								<div class="progress-bar progress-1"></div>
+							</div>
 						</div>
 					</div>
 					<div class="design">
-						<p>But also </p><p class="font-size-h4">Design</p>
+						<p class="title">But also <b>Design</b></p>
 						<div class="skill-progress">
-							<p>Sketch</p>
-							<div class="progress-bar progress-3"></div>
+							<div class="skill">
+								<p class="skill-title">Sketch</p>
+								<div class="progress-bar progress-3"></div>
+							</div>
 
-							<p>Photoshop</p>
-							<div class="progress-bar progress-6"></div>
+							<div class="skill">
+								<p class="skill-title">Adobe Photoshop</p>
+								<div class="progress-bar progress-6"></div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="btn-next-wrapper"></div>
 		</div>
-		<div class="wrapper" id="what">
+		<div class="wrapper section" id="what-container">
 			<div class="navigation">
-				<a href="#">Hello.</a>
-				<a href="#">Who?</a>
+				<a href="#hello">Hello.</a>
+				<a href="#who">Who?</a>
 
 				<div class="btn-previous-wrapper"></div>
 
-				<a href="#">What?</a>
-				<a href="#">Wow!</a>
+				<a href="#what" class="active">What?</a>
+				<a href="#wow">Wow!</a>
 			</div>
 			<div class="content center">
 				<div class="menu">
-					<p>Have a look at my </p><p class="font-size-h4">work</p>
+					<p>Have a look at my <b>work</b></p>
 
-					<div class="view-toggler featured">Featured</div>
-					<div class="view-toggler all">All</div>
+					<div class="btn-wrapper">
+						<div class="view-toggler featured active" id="view-toggler-show-featured">Featured</div>
+						<div class="view-toggler all" id="view-toggler-show-all">All</div>
+					</div>
 				</div>
 
 				<!-- Show as default -->
 				<div class="work-view" id="work-featured">
 					<div class="item">
 						<small>Project</small>
-						<p class="font-size-h3">
+						<p class="font-size-h4">
 							SCREDIA<br>
 							SIMPLE. CREATIVE. MEDIA.
 						</p>
 					</div>
 					<div class="item">
 						<small>Design</small>
-						<p class="font-size-h3">
+						<p class="font-size-h4">
 							REDESIGNING<br>
 							THE WEB FOR THE NEW<br>
 							„COMIC SANS“ - TREND
@@ -142,7 +156,7 @@
 					</div>
 					<div class="item">
 						<small>Script</small>
-						<p class="font-size-h3">
+						<p class="font-size-h4">
 							LAZY.JS<br>
 							THE SCRIPT I WAS<br>
 							TO LAZY TO WRITE
@@ -191,42 +205,38 @@
 			</div>
 			<div class="btn-next-wrapper"></div>
 		</div>
-		<div class="wrapper" id="wow">
+		<div class="wrapper section" id="wow-container">
 			<div class="navigation">
-				<a href="#">Hello.</a>
-				<a href="#">Who?</a>
+				<a href="#hello">Hello.</a>
+				<a href="#who">Who?</a>
 
 				<div class="btn-previous-wrapper"></div>
 
-				<a href="#">What?</a>
-				<a href="#">Wow!</a>
+				<a href="#what">What?</a>
+				<a href="#wow" class="active">Wow!</a>
 			</div>
-
 			<div class="content center">
-				<h1>Say hi.</h1>
-				<hr>
+				<div class="title-box">
+					<p class="font-size-h1">Say hi.</p>
+					<hr>
+				</div>
 
-				<p class="font-size-h2">hi@peteramelang.com</p>
+				<a href="mailto:hi@peteramelang.com" class="font-size-h2">hi@peteramelang.com</a>
 
-				<div><p>Visit me on </p><p class="font-size-h4 dribbble">DRIBBBLE</p></div>
-				<div><p>Visit me on </p><p class="font-size-h4 github">github</p></div>
+				<a href="#" class="external-link">Visit me on <b class="dribbble">DRIBBBLE</b></a>
+				<a href="#" class="external-link">Visit me on <b class="github">github</b></a>
 			</div>
 
-			<ul class="footer">
-				<li>
-					<a href="#">peteramelang.net</a>
-				</li>
-				<li>
-					2015
-				</li>
-				<li>
-					<a href="#">Impress</a>
-				</li>
-			</ul>
+			<div class="footer">
+				<a href="#">peteramelang.net</a>
+				<p class="year">2015</p>
+				<a href="#">Impress</a>
+			</div>
 
 		</div>
 	</div>
+
+	<script src="js/main.min.js"></script>
+
 </body>
-
-
 </html>

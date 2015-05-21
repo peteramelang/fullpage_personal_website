@@ -1,0 +1,118 @@
+#what-container {
+	.content {
+		text-transform: uppercase;
+
+		b { font-weight: $font-weight-bold; }
+		.menu b { font-size: $font-size-h4; color: $black }
+
+		p {
+			font-size: $font-size-base;
+			color: $darkgrey;
+			font-weight: $font-weight-bold;
+
+			&.font-size-h3 { font-size: $font-size-h3; color: $black }
+			&.font-size-h4 { font-size: $font-size-h4; color: $black }
+		}
+
+		.work-view {
+			width: 100%;
+			text-align: center;
+			margin: 20px auto 0 auto;
+		}
+
+		.menu {
+			text-align: center;
+			margin: 0 auto;
+			width: 100%;
+
+			.btn-wrapper {
+				display: inline-block;
+				margin-top: 15px;
+
+				.view-toggler {
+					float: left;
+					width: auto;
+					padding-left: 24px;
+					height: 22px;
+					line-height: 22px;
+					font-weight: $font-weight-bold;
+					color: $darkgrey;
+					cursor: pointer;
+
+					&.featured { @include retina-sprite-background("btn-work-featured"); margin-right: 20px; }
+					&.featured.active { @include retina-sprite-background("btn-work-featured-active"); }
+					&.all { @include retina-sprite-background("btn-work-all"); }
+					&.all.active { @include retina-sprite-background("btn-work-all-active"); }
+					&.active, &:hover { color: $black; }
+
+				}
+			}
+		}
+
+		#work-featured {
+			//display: none;
+
+			.item {
+				padding: 10px 0;
+				text-align: center;
+				cursor: pointer;
+
+				small {
+					display: inline-block;
+					width: 60px;
+					height: 16px;
+					line-height: 15px;
+					font-size: 10px;
+					border: 1px solid black;
+					@include borderradius(25px);
+					color: $darkgrey;
+					font-weight: $font-weight-bold;
+				}
+
+				&:hover {
+					background: $black;
+
+					p, small { color: $white; }
+					small { border-color: $white; }
+				}
+			}
+		}
+
+		#work-all {
+			display: none;
+			width: 100%;
+			max-width: 600px;
+			div {
+				width: 50%;
+				float: left;
+
+				small {
+					display: inline-block;
+					width: 60px;
+					height: 16px;
+					line-height: 15px;
+					font-size: 10px;
+					border: 1px solid black;
+					@include borderradius(25px);
+					color: $darkgrey;
+					font-weight: $font-weight-bold;
+					margin-bottom: 15px;
+				}
+
+				.item {
+					display: inline-block;
+					padding: 10px 0;
+					width: 100%;
+					color: $black;
+					cursor: pointer;
+					font-size: 13px;
+
+					&:hover {
+						background: $black;
+						color: $white;
+					}
+				}
+			}
+		}
+	}
+}

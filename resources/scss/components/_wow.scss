@@ -1,0 +1,71 @@
+#wow-container {
+	.title-box {
+		margin: 0 auto;
+
+		p.font-size-h1 {
+			text-transform: uppercase;
+			font-weight: $font-weight-bold;
+			float: left;
+			width: auto;
+		}
+
+		hr { margin-top: -8px; float: inherit; }
+	}
+
+	.font-size-h2 {
+		float: left;
+		width: auto;
+		line-height: 36px;
+		margin: 40px 0;
+		font-weight: $font-weight-bold;
+		font-size: $font-size-h2;
+	}
+
+	.external-link {
+		float: left;
+		width: 100%;
+		line-height: 24px;
+		font-size: $font-size-base;
+		color: $darkgrey;
+		font-weight: $font-weight-bold;
+		text-transform: uppercase;
+		text-align: center;
+		margin-bottom: 5px;
+
+		b {
+			font-size: $font-size-h4;
+			color: $black;
+			background-position: right;
+			padding-right: 30px;
+
+			&.dribbble { @include retina-background("dribbble-logo"); }
+			&.github { @include retina-background("github-logo"); }
+		}
+	}
+
+	.footer {
+		position: absolute;
+		bottom: 20px;
+		left: 50%;
+		transform: translateX(-50%);
+		font-size: $font-size-small;
+		font-weight: $font-weight-bold;
+		color: $darkgrey;
+
+		* { float: left; }
+
+		.year {
+			font-size: $font-size-base;
+			margin: 0 20px;
+		}
+
+		a {
+			color: $darkgrey;
+
+			&:hover {
+				color: $black;
+				border-bottom: 2px $black solid;
+			}
+		}
+	}
+}
