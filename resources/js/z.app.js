@@ -139,7 +139,6 @@ function setWowContainerWidthAndCenter() {
 	var wowWidth = $('#wow-container').find('.font-size-h2').width();
 	$('#wow-container').find('.content').width(wowWidth);
 
-
 	var headerWidth = $('#wow-container').find('.font-size-h1').width();
 	$('#wow-container').find('.title-box').width(headerWidth);
 }

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+    <title>Button next hover</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="26" height="12"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Who?" sketch:type="MSArtboardGroup" transform="translate(-670.000000, -924.000000)">
+            <g id="Button-next-hover" sketch:type="MSLayerGroup" transform="translate(0.000000, 924.000000)">
+                <rect id="Rectangle-36-Copy" fill="#000000" sketch:type="MSShapeGroup" x="670" y="0" width="100" height="100"></rect>
+                <circle id="Oval-1" stroke="#FFFFFF" sketch:type="MSShapeGroup" cx="720" cy="50" r="20"></circle>
+                <g id="Triangle-1-Copy" transform="translate(707.000000, 45.000000)">
+                    <mask id="mask-2" sketch:name="Mask" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" sketch:type="MSShapeGroup" xlink:href="#path-1"></use>
+                    <path d="M0,-2 L26,-2 L13,11 L0,-2 Z" id="Triangle-1" stroke="#FFFFFF" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
