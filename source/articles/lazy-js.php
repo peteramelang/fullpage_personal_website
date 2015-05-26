@@ -1,10 +1,8 @@
-<div class="detail-view design">
+<div class="detail-view design" id="lazy-js-view">
 	<div class="btn-close-detailpage">Back</div>
 
 	<h3>
-		REDESIGNING<br>
-		THE WEB FOR THE NEW<br>
-		„COMIC SANS“ - TREND
+		lazy js
 	</h3>
 
 	<small>Design</small>

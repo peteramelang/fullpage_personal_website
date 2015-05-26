@@ -118,6 +118,9 @@
 			<div class="btn-next-wrapper"></div>
 		</div>
 		<div class="wrapper section" id="what-container">
+			<div id="article-load-wrapper">
+
+			</div>
 			<div class="navigation">
 				<a href="#hello">Hello.</a>
 				<a href="#who">Who?</a>
@@ -139,14 +142,14 @@
 
 				<!-- Show as default -->
 				<div class="work-view" id="work-featured">
-					<div class="item">
+					<div class="item" id="scredia">
 						<small>Project</small>
 						<p class="font-size-h4">
 							SCREDIA<br>
 							SIMPLE. CREATIVE. MEDIA.
 						</p>
 					</div>
-					<div class="item">
+					<div class="item" id="redesign-web-comic-sans">
 						<small>Design</small>
 						<p class="font-size-h4">
 							REDESIGNING<br>
@@ -154,7 +157,7 @@
 							„COMIC SANS“ - TREND
 						</p>
 					</div>
-					<div class="item">
+					<div class="item" id="lazy-js">
 						<small>Script</small>
 						<p class="font-size-h4">
 							LAZY.JS<br>

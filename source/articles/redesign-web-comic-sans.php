@@ -1,4 +1,4 @@
-<div class="detail-view design">
+<div class="detail-view design" id="redesign-web-comic-sans-view">
 	<div class="btn-close-detailpage">Back</div>
 
 	<h3>
