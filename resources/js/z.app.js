@@ -39,7 +39,6 @@
 			//Design
 			controlArrows: true,
 			verticalCentered: true,
-			resize : true,
 			paddingTop: '0px',
 			responsive: 0,
 
@@ -139,15 +138,23 @@
 	function initArticleManager() {
 		var loadedArticle = [];
 
+		$( document ).ready(function() {
+			var selectedArticle = "redesign-web-comic-sans";
+			if(jQuery.inArray(selectedArticle, loadedArticle)!==-1){
+				showArticle(selectedArticle, false);
+			} else {
+				articleLoader(selectedArticle, showArticle(selectedArticle, true));
+				loadedArticle.push(selectedArticle);
+			}
+		});
+
 		$("#what-container").find(".item").on("click", function() {
 			var selectedArticle = $(this).attr('id');
 			if(jQuery.inArray(selectedArticle, loadedArticle)!==-1){
 				showArticle(selectedArticle, false);
-				console.log("in Array");
 			} else {
 				articleLoader(selectedArticle, showArticle(selectedArticle, true));
 				loadedArticle.push(selectedArticle);
-				console.log("NOT in Array");
 			}
 		});
 
@@ -160,7 +167,6 @@
 					$('#article-load-wrapper').append(data);
 				}
 			});
-			console.log("AJAX LOAD");
 		}
 
 		function showArticle(id, newArticle) {
@@ -173,11 +179,11 @@
 			if(newArticle == true) {
 				$(document).ajaxComplete(function(){
 					articleViewController(articleToShowID);
+					console.log("controller: " + articleToShow);
 
 					$.fn.fullpage.setKeyboardScrolling(false);
 					$.fn.fullpage.setAllowScrolling(false);
 					$.fn.fullpage.setFitToSection(false);
-					console.log("ajax");
 
 					$(articleViewWrapper).show();
 					$(articleToShow).show();
@@ -188,30 +194,21 @@
 				$.fn.fullpage.setKeyboardScrolling(false);
 				$.fn.fullpage.setAllowScrolling(false);
 				$.fn.fullpage.setFitToSection(false);
-				$.fn.fullpage.setResize(false);
-
-				console.log("NO ajax");
 
 				$(articleViewWrapper).show();
 				$(articleToShow).show();
 			}
-
-
 		}
 
 		function hideArticle(exclude) {
 			var articleViewWrapper = $('#article-load-wrapper'),
 				articleToHide;
 
-			console.log(exclude);
-
 			if(exclude == "" || exclude == null) {
-				articleToHide = articleViewWrapper.find('.detail-view');
+				articleToHide = articleViewWrapper.find('.detail-view-container');
 				$(articleViewWrapper).hide();
-				console.log("empty");
 			} else if(exclude && exclude != "" && exclude != null) {
-				articleToHide = articleViewWrapper.find('.detail-view').not($(this).attr('id')==exclude);
-				console.log("show: " + exclude);
+				articleToHide = articleViewWrapper.find('.detail-view-container').not($(this).attr('id')==exclude);
 			}
 
 			$.fn.fullpage.setKeyboardScrolling(true);
@@ -224,11 +221,16 @@
 		// What: Articles view
 
 		function articleViewController(id) {
-			$('.detail-view').find('.btn-close-detailpage').on('click', function(){
+			if($('#' + id).find('.slider-container').length){
+				console.log('#' + id + " has slider");
+			} else {
+				console.log('#' + id + " has NO slider");
+			}
+
+			$('#' + id).find('.btn-close-detailpage').on('click', function(){
 				hideArticle("");
 			});
 		}
-
 	}
 
 	// Wow: Set container width

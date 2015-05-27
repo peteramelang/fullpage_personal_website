@@ -11,8 +11,6 @@
 	-ms-transform: rotate($amount);
 }
 
-
-
 @mixin borderradius($amount) {
 	-webkit-border-radius: $amount;
 	-moz-border-radius: $amount;
@@ -25,25 +23,47 @@
 	box-shadow: $amount rgba(0, 0, 0, 0.5);
 }
 
-@mixin animation($name, $duration, $loop, $delay:"") {
-	-webkit-animation: $name $duration $loop;
-	animation: $name $duration $loop;
-	-webkit-animation-delay: unquote($delay);
-	animation-delay: unquote($delay);
-	-webkit-animation-play-state:paused;
-	animation-play-state: paused;
-	-webkit-transition-timing-function: ease-out;
-	transition-timing-function: ease-out;
-}
-
-@mixin keyframes-move($name, $from-top, $to-top, $from-left, $to-left, $from-rotate:"", $to-rotate:"") {
+@mixin keyframes($name) {
 	@-webkit-keyframes #{$name} {
-		0% {top: $from-top; left: $from-left; @include rotate(unquote($from-rotate))}
-		100% {top: $to-top; left: $to-left; @include rotate(unquote($to-rotate))}
+		@content;
+	}
+	@-moz-keyframes #{$name} {
+		@content;
+	}
+	@-ms-keyframes #{$name} {
+		@content;
 	}
 	@keyframes #{$name} {
-		0% {top: $from-top; left: $from-left; @include rotate(unquote($from-rotate))}
-		100% {top: $to-top; left: $to-left; @include rotate(unquote($to-rotate))}
+		@content;
+	}
+}
+
+@mixin animation ($animation) {
+	-webkit-animation-name: $animation;
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-name: $animation;
+	-moz-animation-fill-mode: forwards;
+	-o-animation-name: $animation;
+	-o-animation-fill-mode: forwards;
+	animation-name: $animation;
+	animation-fill-mode: forwards;
+}
+
+/* kenBurns animations, very basic */
+@include keyframes(left-right) {
+	0% {
+		@include transform(translateY(-20%) translateX(-10%));
+	}
+	100% {
+		@include transform(translateY(0%) translateX(10%));
+	}
+}
+@include keyframes(right-left) {
+	0% {
+		@include transform(translateY(0%) translateX(10%));
+	}
+	100% {
+		@include transform(translateY(-20%) translateX(-10%));
 	}
 }
 
