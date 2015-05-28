@@ -23,7 +23,7 @@ module.exports = function(grunt) {
 			},
 			scripts: {
 				files: '<%= globalConfig.scripts_src %>/**/*.js',
-				tasks: ['concat', 'uglify']
+				tasks: ['concat'/*, 'uglify'*/]
 			}
 		},
 		compass: {
@@ -44,7 +44,7 @@ module.exports = function(grunt) {
 				dest: '<%= globalConfig.scripts %>/main.min.js'
 			}
 		},
-		uglify: {
+		/*uglify: {
 			development: {
 				options: {
 					sourceMap: true
@@ -53,7 +53,7 @@ module.exports = function(grunt) {
 					'<%= globalConfig.scripts %>/main.min.js': ['<%= globalConfig.scripts %>/main.min.js']
 				}
 			}
-		},
+		},*/
 		base64: {
 			factsWidget_config_decoder: {
 				files: {
@@ -198,7 +198,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-contrib-imagemin');
 	grunt.loadNpmTasks('grunt-image');
-	grunt.loadNpmTasks('grunt-contrib-uglify');
+	//grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-responsive-images');
 	grunt.loadNpmTasks('grunt-contrib-copy');

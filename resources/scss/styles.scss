@@ -12,7 +12,6 @@
 // Utilities
 @import "utilities/normalize";
 @import "utilities/jquery.fullPage";
-@import "utilities/slippry";
 
 // Bootstrap Core variables and mixins
 @import "bootstrap/variables"; //Breakpoints, Grid System, Container Sizes
@@ -33,3 +32,4 @@
 
 // Vendor
 @import "vendor/font-awesome";
+@import "utilities/slippry";

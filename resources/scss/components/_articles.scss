@@ -39,6 +39,54 @@
 		text-align: center;
 	}
 
+	.slider-container {
+		margin-bottom: 60px;
+	}
+
+	p {
+		margin-bottom: 20px;
+
+		&.textblock {
+			font-size: $font-size-base;
+			line-height: 26px;
+		}
+
+		&.subheadline {
+			text-align: center;
+			font-size: $font-size-large;
+			font-weight: $font-weight-bold;
+			font-style: italic;
+		}
+	}
+
+	.link-container {
+		margin: 10px;
+		width: 100%;
+
+		a.link {
+			text-transform: uppercase;
+			line-height: 20px;
+			font-weight: $font-weight-bold;
+			display: inline-block;
+			padding-left: 25px;
+			margin: 40px auto;
+			position: relative;
+			left: 50%;
+			transform: translateX(-50%);
+			cursor: pointer;
+			color: $darkgrey;
+
+			&.dribbble {
+				@include retina-background("dribbble-logo");
+			}
+
+			&.github {
+				@include retina-background("github-logo");
+			}
+		}
+	}
+
+
 	&.design {
 
 

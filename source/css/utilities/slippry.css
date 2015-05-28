@@ -6,13 +6,13 @@ Error: Undefined variable: "$white".
 11:  *
 12:  * Released under the MIT license - http://opensource.org/licenses/MIT
 13:  *\/
-14:  
-15: $color_high: $white !default;     // highlight colour
-16: $color_gray: $darkgrey !default;        // neutral colour
-17: $controls_size: 2.8em !default;    // size of the next/ prev buttons
-18: $pager_size: 1.2em !default;       // size of the pager bubbles
-19: $trans_ease: ease !default;        // easing for the transitions
-20: $mobile_break: 600px !default;     // breakpoint to use some special mobile styling
+14: 
+15: $color_high: $white !default;
+16: // highlight colour
+17: $color_gray: $darkgrey !default;
+18: // neutral colour
+19: $controls_size: 2.8em !default;
+20: // size of the next/ prev buttons
 
 Backtrace:
 /Users/peter/htdocs/peteramelang-website/resources/scss/utilities/slippry.scss:15
@@ -58,4 +58,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$white\".\A         on line 15 of /Users/peter/htdocs/peteramelang-website/resources/scss/utilities/slippry.scss\A \A 10:  *\A 11:  *\A 12:  * Released under the MIT license - http://opensource.org/licenses/MIT\A 13:  */\A 14:  \A 15: $color_high: $white !default;     // highlight colour\A 16: $color_gray: $darkgrey !default;        // neutral colour\A 17: $controls_size: 2.8em !default;    // size of the next/ prev buttons\A 18: $pager_size: 1.2em !default;       // size of the pager bubbles\A 19: $trans_ease: ease !default;        // easing for the transitions\A 20: $mobile_break: 600px !default;     // breakpoint to use some special mobile styling"; }
+  content: "Error: Undefined variable: \"$white\".\A         on line 15 of /Users/peter/htdocs/peteramelang-website/resources/scss/utilities/slippry.scss\A \A 10:  *\A 11:  *\A 12:  * Released under the MIT license - http://opensource.org/licenses/MIT\A 13:  */\A 14: \A 15: $color_high: $white !default;\A 16: // highlight colour\A 17: $color_gray: $darkgrey !default;\A 18: // neutral colour\A 19: $controls_size: 2.8em !default;\A 20: // size of the next/ prev buttons"; }

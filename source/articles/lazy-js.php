@@ -8,7 +8,7 @@
 
 		<small>Design</small>
 
-		<div class="slider">
+		<div class="slider-T">
 			<ul id="thumbnails">
 				<li>
 					<a href="#slide1">
