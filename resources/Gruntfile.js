@@ -54,13 +54,6 @@ module.exports = function(grunt) {
 				}
 			}
 		},*/
-		base64: {
-			factsWidget_config_decoder: {
-				files: {
-					'<%= globalConfig.scripts %>/factsWidget/config.b64': ['<%= globalConfig.scripts_src %>/factsWidget/config.xml']
-				}
-			}
-		},
 
 		// Image resizer
 		// https://www.npmjs.org/package/grunt-responsive-images

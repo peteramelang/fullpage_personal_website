@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
@@ -13,34 +13,32 @@
 
 	<link rel="stylesheet" href="css/styles.css" />
 
-	<meta property="og:title" content="FB Titel"/>
+	<meta property="og:title" content="Peter Amelang - Developer"/>
 	<meta property="og:image" content="FB Bild"/>
 	<meta property="og:site_name" content="Peter Amelang"/>
-	<meta property="og:description" content="FB Beschreibung"/>
+	<meta property="og:description" content="Peter Amelang, Allrounder, Backend-& Frontenddevloper & Trekkie with a passion for cycling."/>
 	<meta property="og:type" content="website" />
 
-	<!--<meta name="msapplication-square70x70logo" content="images/windows-tile-70x70.png">
-	<meta name="msapplication-square150x150logo" content="images/windows-tile-150x150.png">
-	<meta name="msapplication-square310x310logo" content="images/windows-tile-310x310.png">
-	<meta name="msapplication-TileImage" content="images/windows-tile-144x144.png">
-	<meta name="msapplication-TileColor" content="#292929">
-	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="images/apple-touch-icon-152x152-precomposed.png">
-	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="images/apple-touch-icon-120x120-precomposed.png">
-	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="images/apple-touch-icon-76x76-precomposed.png">
-	<link rel="apple-touch-icon-precomposed" sizes="60x60" href="images/apple-touch-icon-60x60-precomposed.png">
-	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/apple-touch-icon-144x144-precomposed.png">
-	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/apple-touch-icon-114x114-precomposed.png">
-	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/apple-touch-icon-72x72-precomposed.png">
-	<link rel="apple-touch-icon" sizes="57x57" href="images/apple-touch-icon.png">
-	<meta name="mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-title" content="Format D">
-	<link rel="icon" sizes="196x196" href="images/homescreen-196x196.png">
-	<link rel="shortcut icon" href="images/favicon.ico">
-	<link rel="icon" type="image/png" sizes="64x64" href="images/favicon.png">-->
+	<link rel="apple-touch-icon" sizes="57x57" href="images/browser-icons/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="images/browser-icons/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/browser-icons/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="images/browser-icons/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/browser-icons/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="images/browser-icons/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="images/browser-icons/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="images/browser-icons/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/browser-icons/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="images/browser-icons/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/browser-icons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="images/browser-icons/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/browser-icons/favicon-16x16.png">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="images/browser-icons/ms-icon-144x144.png">
 </head>
 <body>
 	<div class="global-wrapper" id="fullpage">
 		<div class="wrapper section" id="hello-container">
+			<div id="header-logo"></div>
 			<div class="content center">
 				<p class="font-size-h1">Hello.</p>
 				<hr>
@@ -87,14 +85,14 @@
 							<div class="skill">
 								<p class="skill-title">PHP</p>
 								<a class="help-toggler"></a>
-								<p class="help-content">HTML 5, CSS3, SASS</p>
+								<p class="help-content">OOP, MVC</p>
 								<div class="progress-bar progress-2"></div>
 							</div>
 
 							<div class="skill">
 								<p class="skill-title">Magento</p>
 								<a class="help-toggler"></a>
-								<p class="help-content">HTML 5, CSS3, SASS</p>
+								<p class="help-content">MVC</p>
 								<div class="progress-bar progress-1"></div>
 							</div>
 						</div>
@@ -109,7 +107,7 @@
 
 							<div class="skill">
 								<p class="skill-title">Adobe Photoshop</p>
-								<div class="progress-bar progress-6"></div>
+								<div class="progress-bar progress-5"></div>
 							</div>
 						</div>
 					</div>
@@ -118,9 +116,11 @@
 			<div class="btn-next-wrapper"></div>
 		</div>
 		<div class="wrapper section" id="what-container">
+			<?php if (1 != 1): ?>
 			<div id="article-load-wrapper">
 
 			</div>
+			<?php endif; ?>
 			<div class="navigation">
 				<a href="#hello">Hello.</a>
 				<a href="#who">Who?</a>
@@ -131,6 +131,10 @@
 				<a href="#wow">Wow!</a>
 			</div>
 			<div class="content center">
+
+				<?php if (1 == 1): ?>
+					<p>Coming soon.</p>
+				<?php else: ?>
 				<div class="menu">
 					<p>Have a look at my <b>work</b></p>
 
@@ -205,6 +209,7 @@
 						</p>
 					</div>
 				</div>
+				<?php endif; ?>
 			</div>
 			<div class="btn-next-wrapper"></div>
 		</div>
@@ -226,15 +231,13 @@
 
 				<a href="mailto:hi@peteramelang.com" class="font-size-h2">hi@peteramelang.com</a>
 
-				<a href="#" class="external-link">Visit me on <b class="dribbble">DRIBBBLE</b></a>
-				<a href="#" class="external-link">Visit me on <b class="github">github</b></a>
+				<a href="https://dribbble.com/peteramelang" class="external-link">Visit me on <b class="dribbble">DRIBBBLE</b></a>
+				<a href="https://github.com/peteramelang/" class="external-link">Visit me on <b class="github">github</b></a>
 			</div>
 
-			<div class="footer">
-				<a href="#">peteramelang.net</a>
-				<p class="year">2015</p>
-				<a href="#">Impress</a>
-			</div>
+			<p class="footer">
+				<a href="#hello">peteramelang.net</a><b class="year">2015</b><a href="#">Impress</a>
+			</p>
 
 		</div>
 	</div>

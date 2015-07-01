@@ -10,6 +10,9 @@
 			color: $darkgrey;
 			font-weight: $font-weight-bold;
 
+			// Just for "Coming soon." placeholder
+			text-align: center;
+
 			&.font-size-h3 { font-size: $font-size-h3; color: $black }
 			&.font-size-h4 { font-size: $font-size-h4; color: $black }
 		}

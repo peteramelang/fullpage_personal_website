@@ -49,6 +49,7 @@
 			afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
 			onSlideLeave: function(anchorLink, index, slideIndex, direction){}
 		});
+
 	}
 
 	// Set Hello-line width
@@ -64,7 +65,7 @@
 
 	$(function(){
 		$("#personal-info").typed({
-			strings: ["in training at <a href='https://format-d.com' target='_blank'>Format D</a>", "Second sentence."],
+			strings: ["in training at <a href='https://format-d.com' target='_blank'>Format D</a>", "a Trekkie.", "in love with my bike."],
 			typeSpeed: 60,
 			startDelay: 0,
 			backSpeed: 40,
@@ -99,8 +100,13 @@
 
 	// Who? - Skills Help Toggler
 
-	$("#who-container").find(".help-toggler").on("click", function() {
-		$(this).next(".help-content").toggle();
+	$("#who-container").find(".help-toggler").on({
+		mouseenter: function () {
+			$(this).next(".help-content").toggle();
+		},
+		mouseleave: function () {
+			$(this).next(".help-content").toggle();
+		}
 	});
 
 	// What? - Set same height

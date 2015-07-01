@@ -9,7 +9,7 @@
 			width: auto;
 		}
 
-		hr { margin-top: -8px; float: inherit; }
+		hr { margin-top: -8px; }
 	}
 
 	.font-size-h2 {
@@ -46,13 +46,11 @@
 	.footer {
 		position: absolute;
 		bottom: 20px;
-		left: 50%;
-		transform: translateX(-50%);
 		font-size: $font-size-small;
 		font-weight: $font-weight-bold;
 		color: $darkgrey;
-
-		* { float: left; }
+		text-align: center;
+		left: 0; right: 0;
 
 		.year {
 			font-size: $font-size-base;
